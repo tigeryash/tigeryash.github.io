@@ -6,6 +6,8 @@
     <meta name="author" content="Yashwanth venkatesan">
     <meta name="description" content="personal website">
     <meta name="language" content="en">
+    <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/style.css">
     <title>Lex PC build</title>
   </head>
@@ -13,12 +15,15 @@
   <body>
 
     <header>
+      <div class="logo">
+        <!--
       <a href="index.html">
         <img src="images/logo.svg" alt="logo">
-      </a>
+      </a>-->
       <h1>Lex PC Build</h1>
-      <nav>
-        <ul>
+    </div>
+
+        <ul class="nav">
           <li><a href="index.html">Home</a></li>
           <li><a href="builds.html">Builds</a></li>
           <li><a href="guides.html">Guides</a></li>
@@ -26,45 +31,84 @@
           <li><a href="accessories.html">Accessories</a></li>
           <li><a href="more.html">More</a></li>
         </ul>
-        <ul>
-          <li><img src="images/icon.svg" alt="search icon">Search</li>
-          <li><a href="login.html"><img src="images/icon.svg" alt="log in">Log in</a></li>
-          <li><a href="cart.html"><img src="images/icon.svg" alt="cart">cart</a></li>
+
+        <ul class="account">
+          <li><i class="fa-solid fa-magnifying-glass"></i>Search</li>
+          <li><a href="login.html"><i class="fa-solid fa-user"></i>Log in</a></li>
+          <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i>cart</a></li>
         </ul>
-      </nav>
+
 
     </header>
 
-    <section id="first">
-      <h2>PC BUILDING MADE EASY</h2>
+
+    <section class="cover">
+      <div class="text-block">
+      <h2>PC BUILDING MADE EASY </h2>
       <h3>Get high quality builds fast and easy</h3>
-      <figure id="main_fig">
-        <img src="images/image259547.png" alt= "picture of a PC">
-      </figure>
-    </section>
-
-    <section id="second">
-      <h3>SERVICES</h3>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-        when an unknown printer took orem Ipsum.</p>
-      <h3>SATISFACTION</h3>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-        when an unknown printer took orem Ipsum.</p>
-      <h3>VALUE</h3>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-        when an unknown printer took orem Ipsum.</p>
+    </div>
     </section>
 
 
 
-  <footer>
-    <h6>Products</h6>
-    <h6>Company</h6>
-    <h6>Support</h6>
-    <h6>Reviews</h6>
-  </footer>
-  </body>
+      <div class="row">
+        <div class="item">
+      <h4 class="item_title">SERVICES</h4>
+      <p class="item_content">We offer great repairs, buiilds, and teach how to build PCs.</p>
+      </div>
+      <div class="item">
+      <h4 class="item_title">SATISFACTION</h4>
+      <p  class="item_content">100% of our customers are satisifed with our products and give us great reviews.</p>
+      </div>
+      <div class="item">
+      <h4 class="item_title">VALUE</h4>
+      <p class="item_content">Our computers have long life expectancy and we have guarantees if our products don't perform orr break.</p>
+      </div>
+    </div>
+
+
+</body>
+
+
+
+<!-- footer -->
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-section about">
+          <h1>About</h1>
+          <p>This is a fictional page for a class project</p>
+          <div class="contact">
+            <span><i class="fa-solid fa-phone"></i> &nbsp; 123-456-789</span>
+            <span><i class="fa-solid fa-envelope"></i> &nbsp; info@lexpcbuild.com</span>
+          </div>
+        </div>
+        <div class="footer-section links">
+          <footer>
+            <h2>Links</h2>
+            <ul>
+              <a href="#"><li><h6>Products</h6></li></a>
+              <a href="#"><li><h6>Company</h6></li></a>
+              <a href="#"><li><h6>Support</h6></li></a>
+              <a href="#"><li><h6>Reviews</h6></li></a>
+            </ul>
+          </div>
+          </footer>
+          <div class="footer-section contact-form">
+            <h2>Contact Us</h2>
+            <br>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="socials">
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+          <div class="copyright">
+          &copy; lexpcbuild.com | Designed by Yash
+        </div>
+        </div>
+      </div>
+
 </html>
