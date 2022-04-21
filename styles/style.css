@@ -160,8 +160,8 @@ header .nav li:nth-child(2) a:hover {
   margin-left: auto;
   margin-right: auto;
   width:100%;
-  max-width: 400px;
-  height:auto;
+  max-width: 50%;
+  max-height:64%;
 }
 
 .item_title{
