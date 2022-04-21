@@ -155,6 +155,15 @@ header .nav li:nth-child(2) a:hover {
   padding: 1em;
 }
 
+.item_image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:100%;
+  max-width: 400px;
+  height:auto;
+}
+
 .item_title{
   text-align: center;
 }
