@@ -172,6 +172,58 @@ header .nav li:nth-child(2) a:hover {
     text-align: center;
 }
 
+input[type=text], textarea{
+  width: 90%;
+  padding: 12px;
+  resize: vertical;
+  border-radius: 0;
+  border-color: #ccc;
+    border-width: 0 0 2px 0;
+    border-style: none none solid none;
+    box-shadow: none;
+}
+
+input[type=text]:focus, textarea:focus{
+  box-shadow: none;
+  border-color: #5e9bfc;
+}
+
+input[type=submit] {
+  background: 0 0 #ffffff;
+  border-radius: 3px;
+  color: #2f323a;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: inherit;
+  margin: 30px 0;
+  padding: 10px 50px;
+  text-transform: uppercase;
+  
+}
+
+input[type=submit]:hover {
+  border-color: #5e9bfc;
+	color: #5e9bfc;
+}
+
+.container {
+  padding: 20px;
+}
+
+
+.col_input{
+  float: left;
+  width: 100%;
+  margin-top: 6px;
+}
+
+.row_div:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
 .footer  {
   background-color: #303036;
   color: #d3d3d3;
