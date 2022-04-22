@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <title>HTML and CSS Table Demo</title>
+
+    <!--
+      More on tables at MDN Web Docs:
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Advanced
+    -->
+
+    <style>
+
+      @import
+      url('http://fonts.cdnfonts.com/css/pokemon-solid');
+
+      html, body{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+      }
+      table {
+        border: 5px solid black;
+      }
+
+      caption {
+        font-family:'PoKeMoN Solid', sans-serif;
+        font-size: 1.5rem;
+        text-border: 2px #0A285F;
+        text-shadow: 3px 3px 4px black;
+        padding: 5px;
+        background-color: #2a75bb;
+        color: #ffcb05;
+        border-top: 5px solid black;
+        border-right: 5px solid black;
+        border-left: 5px solid black;
+      }
+
+      thead {
+        background-color: #FB1B1B;
+        color: white;
+        font-weight: bold;
+        border-collapse:collapse;
+
+      }
+
+      tfoot {
+        background-color: #DFDFDF;
+        color: black;
+        font-weight: bold;
+        border-collapse:collapse;
+      }
+
+      th, td {
+        padding: 5px 10px;
+      }
+
+      .center {
+        text-align: center;
+      }
+
+      .fire:hover {
+        background-color: #F08030;
+        color: white;
+      }
+
+      .water:hover {
+        background-color: #6890F0;
+        color: white;
+      }
+
+      .grass:hover {
+        background-color: #78C850;
+        color: white;
+      }
+
+    </style>
+
+  </head>
+  <body>
+
+    <table>
+      <caption>Pokemon Starters</caption>
+      <thead>
+        <tr>
+          <td>Region</td>
+          <td>Fire</td>
+          <td>Water</td>
+          <td>Grass</td>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Kanto</td>
+          <td class="fire">Charmander</td>
+          <td class="water">Squirtle</td>
+          <td class="grass">Bulbasaur</td>
+        </tr>
+
+        <tr>
+          <td>Johto</td>
+          <td class="fire">Cyndaquil</td>
+          <td class="water">Tododile</td>
+          <td class="grass">Chikorita</td>
+        </tr>
+
+        <tr>
+          <td>Hoenn</td>
+          <td class="fire">Torchic</td>
+          <td class="water">Mudkip</td>
+          <td class="grass">Treeko</td>
+        </tr>
+
+        <tr>
+          <td>Sinnoh</td>
+          <td class="fire">Chimchar</td>
+          <td class="water">Piplup</td>
+          <td class="grass">Turtwig</td>
+        </tr>
+
+        <tr>
+          <td>Unova</td>
+          <td class="fire">Tepig</td>
+          <td class="water">Oshawott</td>
+          <td class="grass">Snivy</td>
+        </tr>
+
+        <tr>
+          <td>Kalos</td>
+          <td class="fire">Fennekin</td>
+          <td class="water">Froakie</td>
+          <td class="grass">Chespin</td>
+        </tr>
+
+        <tr>
+          <td>Alola</td>
+          <td class="fire">Litten</td>
+          <td class="water">Poplio</td>
+          <td class="grass">Rowlet</td>
+        </tr>
+
+        <tr>
+          <td>Galar</td>
+          <td class="fire">Scorbunny</td>
+          <td class="water">Sobble</td>
+          <td class="grass">Grookey</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+         <td>Caught by Ash</td>
+         <td class="center">5</td>
+         <td class="center">4</td>
+         <td class="center">7</td>
+        </tr>
+      </tfoot>
+
+    </table>
+
+  </body>
+  </html>
