@@ -3,9 +3,12 @@ html  {
 }
 
 html, body  {
+  scroll-behavior: smooth;
+  width: 100%;
   height: 100%;
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
   background-color: #ffffff;
   font-family: arial, sans-serif;
 }
@@ -84,7 +87,7 @@ header .account li {
 }
 
 header .account li a{
-  display: flex;
+
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
@@ -161,23 +164,32 @@ header .nav li:nth-child(2) a:hover {
 }
 
 .row {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 1fr;
-  grid-gap: 1em;
+  display: flex;
+  flex-direction: column;
+  max-width: 30rem;
+  margin: 0 auto;
   color: #000000;
-  padding: 5em 0 5em 0;
+  padding: 0 5em;
 }
 
-.item{
+
+.item {
+  margin: 0;
+  flex: 0 1 33%;
   padding: 1em;
+  border-radius: 0.35em;
+  overflow:hidden;
+  box-shadow: 0 0 1em rgba(0,0 ,0, 0.1);
+}
+
+.item + .item {
+  margin-left: 1em;
 }
 
 .item_image{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width:100%;
   max-width: 50%;
   max-height:64%;
 }
@@ -302,4 +314,20 @@ input[type=submit]:hover {
 
 .footer .foot-bottom .socials a{
 
+}
+
+@media only screen and (min-width: 750px){
+  .row{
+    flex-direction: row;
+    max-width: 1200px;
+  }
+
+  .item{
+    margin: 0;
+    flex: 0 1 33%;
+  }
+
+  .item + .item {
+    margin-left: 1em;
+  }
 }
