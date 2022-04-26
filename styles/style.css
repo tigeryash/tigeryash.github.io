@@ -263,6 +263,11 @@ input[type=submit]:hover {
   clear: both;
 }
 
+.cont{
+  width: 100%;
+  background-color: #1e1f24;
+}
+
 .build_title{
   text-align: center;
   font-weight: bold;
@@ -278,10 +283,10 @@ input[type=submit]:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  justify-content: space-between;
   background-color: #1e1f24;
-  margin: auto;
   color: white;
-  width: 100%;
+  margin: auto;
 }
 
 .option{
@@ -297,12 +302,14 @@ input[type=submit]:hover {
   margin-left: auto;
   margin-right: auto;
 }
+
 .option_title{
   text-align: center!important;
   font-family: "azo-sans-web",sans-serif;
   font-weight: bold;
   font-size: 2rem;
 }
+
  .option_content{
    border-collapse: collapse;
    background-color: #f83f52;
@@ -335,7 +342,7 @@ input[type=submit]:hover {
   position: relative;
   background-color: #958f99;
   border: none;
-  font-size: .9;
+  font-size: .9em;
   color: #FFFFFF;
   padding: 20px;
   width: 200px;
